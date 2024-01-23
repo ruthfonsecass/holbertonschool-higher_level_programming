@@ -7,3 +7,4 @@ number = random.randint(-10, 10)
         print(f"{number} is zero")
     else:
         print(f"{number} is negative")
+
