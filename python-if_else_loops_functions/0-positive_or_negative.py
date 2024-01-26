@@ -7,4 +7,3 @@ number = random.randint(-10, 10)
         print("{} is zero".format(number))
     else:
         print("{} is negative".format(number))
-
