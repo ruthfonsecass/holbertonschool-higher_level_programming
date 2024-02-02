@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    if sentence is None:
-        return
+    if sentence == "":
+        return None
     result = sentence()
     print(result)
