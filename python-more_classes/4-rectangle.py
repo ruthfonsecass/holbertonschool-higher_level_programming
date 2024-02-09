@@ -27,7 +27,8 @@ def height(self, value):
     if value < 0:
         raise ValueError("height must be >= 0")
     else:
-        return self.__height = value
+        self.__height = value
+        return self.__height
 
 def area(self):
     return self.__height * self.__width
