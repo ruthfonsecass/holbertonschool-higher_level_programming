@@ -14,6 +14,5 @@ class Square:
         if size < 0:
             """Check if size is less than 0."""
             raise ValueError("size must be >= 0")
-        
-        self.size = size
-        """Assign size to the instance variable after validations."""
+        else:
+            self.size = size
