@@ -36,7 +36,7 @@ def height(self):
 
 @height.setter
 def height(self, value):
-    if type(value) is not int:
+    if not isinstance(value, int):
         raise TypeError("height must be an integer")
     if value < 0:
         raise ValueError("height must be >= 0")
@@ -51,8 +51,8 @@ def area(self):
 def perimeter(self):
     if self.__height == 0 and self.__width == 0:
         return 0
-    
-    return 2 * (self.__height + self.__width)
+    else:
+        return 2 * (self.__height + self.__width)
 
 
 def __str__(self):
