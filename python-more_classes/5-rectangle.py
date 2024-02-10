@@ -21,7 +21,7 @@ def width(self):
 
 @width.setter
 def width(self, value):
-    if type(value) is not int:
+    if not isinstance(value, int):
         raise TypeError("idth must be an integer")
     if value < 0:
         raise ValueError("width must be >= 0")
