@@ -75,4 +75,4 @@ def __repr__(self):
             string represenation of the object
 
         """
-    return "Rectangle({:d}, {:d})".format(self.heigth, self.width)
+    return "Rectangle({:d}, {:d})".format(self.width, self.height)
