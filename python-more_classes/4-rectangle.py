@@ -47,8 +47,8 @@ def area(self):
 def perimeter(self):
     if self.__height == 0 and self.__width == 0:
         return 0
-    else:
-        return 2 * (self.__height + self.__width)
+    
+    return 2 * (self.__height + self.__width)
 
 
 def __str__(self):
