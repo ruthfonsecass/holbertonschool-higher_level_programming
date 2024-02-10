@@ -52,6 +52,11 @@ def perimeter(self):
 
 
 def __str__(self):
+    """ Method that returns the Rectangle #
+
+        Returns:
+            str of the rectangle
+        """
     rectangle = ""
 
     if self.width == 0 or self.height == 0:
@@ -64,4 +69,10 @@ def __str__(self):
 
 
 def __repr__(self):
+    """ Method that returns the string represantion of the instance
+
+        Returns:
+            string represenation of the object
+
+        """
     return "Rectangle({:d}, {:d})".format(self.heigth, self.width)
