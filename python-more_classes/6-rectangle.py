@@ -1,11 +1,4 @@
-class Rectangle:
 #!/usr/bin/python3
-"""
-
-This module is composed by a class that defines a Rectangle
-
-
-"""
 
 
 class Rectangle:
@@ -151,4 +144,3 @@ class Rectangle:
         """
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-
