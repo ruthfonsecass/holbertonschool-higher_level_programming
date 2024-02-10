@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define Python interpreter path."""
 
+
 class Square:
     """Class definition for a square."""
 
@@ -15,7 +16,6 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """Setter method to set the size of the square, with checks for int and >= 0."""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -28,7 +28,6 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
-        """Print the square using '#' symbols or a newline if size is 0."""
         if not self.size:
             print()
         else:
