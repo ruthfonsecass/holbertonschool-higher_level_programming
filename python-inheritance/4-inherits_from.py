@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A module with a class MyList that inherits from class list"""
+"""A module with a class inherits_fromthat inherits from class list"""
 
 
 def inherits_from(obj, a_class):
