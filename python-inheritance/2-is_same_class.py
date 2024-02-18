@@ -7,7 +7,4 @@ def is_same_class(obj, a_class):
     of the specified class ;
     otherwise False.
     """
-    if isinstance(obj, a_class):
-        return True
-    else:
-        return False
+    return isinstance(obj, a_class) and type(obj) is a_class
