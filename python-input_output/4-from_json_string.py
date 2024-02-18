@@ -8,9 +8,9 @@ This module contains a function returns an object
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """
     Function that returns an object (Python data structure)
     represented by a JSON string.
     """
-    return json.dumps(my_obj)
+    return json.dumps(my_str)
