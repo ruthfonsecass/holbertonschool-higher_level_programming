@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-A module with an empty BaseGeometry class
+This module defines the `BaseGeometry` class.
 """
 
 
