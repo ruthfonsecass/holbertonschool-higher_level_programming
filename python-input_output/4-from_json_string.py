@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+This module contains a function returns an object
+(Python data structure) represented by a JSON string.
+"""
+
 import json
 
 
