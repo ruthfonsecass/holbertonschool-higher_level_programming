@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """A module with a Rectangle Class"""
+
+
 from models.base import Base
+
+
 class Rectangle(Base):
     """A Rectangle class that inherits from Base class"""
 
@@ -20,24 +24,29 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+
 @property
 def width(self):
+
     """Gets the height of the Rectangle"""
     return self.__width
+
 
 @width.setter
 def width(self, value):
     if type(value) is not (int):
-        raise TypeError(" width must be an integer")
+        raise TypeError("width must be an integer")
     if width <= 0:
         raise ValueError("width must be > 0")
     else:
         self.__width = value
 
+
 @property
 def heigth(self):
     """Gets the height of the Rectangle"""
     return self.__heigth
+
 
 @heigth.setter
 def heigth(self, value):
@@ -48,9 +57,11 @@ def heigth(self, value):
     else:
         self.__heigth = value
 
+
 @property
 def x(self):
     return self.__x
+
 
 @x.setter
 def x(self, value):
@@ -61,10 +72,12 @@ def x(self, value):
         raise ValueError("x must be >= 0")
     else:
         self.__x = value
-    
+
+
 @property
 def y(self):
     return self.__y
+
 
 @y.setter
 def y(self, value):
