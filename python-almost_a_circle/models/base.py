@@ -11,8 +11,19 @@ class Base:
 
 
 def __init__(self, id=None):
+    """
+        This is a constructor function that assigns an ID to an object either
+        based on a given ID or by incrementing a counter.
+
+        Args:
+            id (int): The "id" parameter is an optional argument that can
+            be passed to the constructor of an object. If a value is provided
+            for "id", it will be assigned to the object's "id" attribute.
+            If no value is provided for "id", a new value will be generated
+            and assigned to.
+        """
     if id is not None:
         self.id = id
     else:
         type(self).__nb_objects += 1
-        self.id = type(self).__nb_objects
+        self.id = Base.__nb_objects
