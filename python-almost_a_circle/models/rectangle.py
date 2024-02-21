@@ -89,8 +89,9 @@ class Rectangle(Base):
         """constructs a string representation of the rectangle,
         where each line of the rectangle is represented by #
         """
-        rectangle_str = ""
+        rectangle_str = self.y * "\n"
         for i in range(self.height):
+            rectangle_str += " " * self.x
             rectangle_str += "#" * self.width
             if i < self.height - 1:
                 rectangle_str += "\n"
