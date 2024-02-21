@@ -96,8 +96,9 @@ class Rectangle(Base):
         print(rectangle_str, end="")
 
     def __str__(self) -> str:
+        """__str__ method"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                       self.x,
-                                                       self.y,
-                                                       self.width,
-                                                       self.heigth)
+                                                       self.__x,
+                                                       self.__y,
+                                                       self.__width,
+                                                       self.__heigth)
