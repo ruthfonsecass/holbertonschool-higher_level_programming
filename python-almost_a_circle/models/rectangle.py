@@ -91,8 +91,6 @@ class Rectangle(Base):
         """
         rectangle_str = self.y * "\n"
         for i in range(self.height):
-            rectangle_str += " " * self.x
-            rectangle_str += "#" * self.width
-            if i < self.height - 1:
-                rectangle_str += "\n"
+            rectangle_str += (" " * self.x)
+            rectangle_str += ("#" * self.width) +"\n"
         print(rectangle_str, end="")
