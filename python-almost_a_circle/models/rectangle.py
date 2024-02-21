@@ -86,6 +86,9 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
+        """constructs a string representation of the rectangle,
+        where each line of the rectangle is represented by #
+        """
         rectangle_str = ""
         for i in range(self.height):
             rectangle_str += "#" * self.width
