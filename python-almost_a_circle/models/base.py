@@ -21,7 +21,7 @@ class Base:
                 for "id", it will be assigned to the object's "id" attribute.
                 If no value is provided for "id", a new value will be generated
                 and assigned to.
-            """
+        """
         if id is not None:
             self.id = id
         else:
