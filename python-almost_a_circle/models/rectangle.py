@@ -51,7 +51,7 @@ def heigth(self):
 def heigth(self, value):
     if type(value) is not int:
         raise TypeError("heigth must be an integer")
-    if width <= 0:
+    if heigth <= 0:
         raise ValueError("heigth must be > 0")
     else:
         self.__heigth = value
