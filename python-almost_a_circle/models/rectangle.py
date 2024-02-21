@@ -23,13 +23,11 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-
     @property
     def width(self):
 
         """Gets the height of the Rectangle"""
         return self.__width
-
 
     @width.setter
     def width(self, value):
@@ -40,12 +38,10 @@ class Rectangle(Base):
         else:
             self.__width = value
 
-
     @property
     def heigth(self):
         """Gets the height of the Rectangle"""
         return self.__heigth
-
 
     @heigth.setter
     def heigth(self, value):
@@ -56,11 +52,9 @@ class Rectangle(Base):
         else:
             self.__heigth = value
 
-
     @property
     def x(self):
         return self.__x
-
 
     @x.setter
     def x(self, value):
@@ -72,11 +66,9 @@ class Rectangle(Base):
         else:
             self.__x = value
 
-
     @property
     def y(self):
         return self.__y
-
 
     @y.setter
     def y(self, value):
@@ -87,9 +79,8 @@ class Rectangle(Base):
         else:
             self.__y = value
 
-
     def area(self):
-            """Public method that returns the area value
+        """Public method that returns the area value
             of the Rectangle instance
-            """
-            return self.width * self.height
+        """
+        return self.width * self.height
