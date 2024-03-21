@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define Python interpreter path."""
+"""Module that defines a rectangle."""
 
 
 class Rectangle:
@@ -37,13 +37,12 @@ class Rectangle:
             self.__height = value
 
 
-    def area(self):
-        """Calculate and return the area of the rectangle."""
-        return self.__height * self.__width
-
-
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
             return 2 * (self.__height + self.__width)
+
+
+    def area(self):
+        return self.__height * self.__width
