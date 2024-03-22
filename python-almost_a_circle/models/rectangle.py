@@ -25,12 +25,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
-
         """Gets the height of the Rectangle"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """Sets the height of the Rectangle"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -39,21 +39,23 @@ class Rectangle(Base):
             self.__width = value
 
     @property
-    def heigth(self):
+    def height(self):
         """Gets the height of the Rectangle"""
-        return self.__heigth
+        return self.__height
 
-    @heigth.setter
-    def heigth(self, value):
+    @height.setter
+    def height(self, value):
+        """Sets the height of the Rectangle"""
         if type(value) is not int:
-            raise TypeError("heigth must be an integer")
+            raise TypeError("height must be an integer")
         if value <= 0:
-            raise ValueError("heigth must be > 0")
+            raise ValueError("height must be > 0")
         else:
-            self.__heigth = value
+            self.__height = value
 
     @property
     def x(self):
+        """Gets the height of the Rectangle"""
         return self.__x
 
     @x.setter
@@ -68,10 +70,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """Gets the height of the Rectangle"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """Sets the height of the Rectangle"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -81,24 +85,23 @@ class Rectangle(Base):
 
     def area(self):
         """Public method that returns the area value
-            of the Rectangle instance
+        of the Rectangle instance
         """
         return self.width * self.height
 
     def display(self):
-        """constructs a string representation of the rectangle,
-        where each line of the rectangle is represented by #
-        """
-        rectangle_str = self.y * "\n"
+        """ displays a rectangle """
+        rectangle = self.y * "\n"
         for i in range(self.height):
-            rectangle_str += (" " * self.x)
-            rectangle_str += ("#" * self.width) + "\n"
-        print(rectangle_str, end="")
+            rectangle += (" " * self.x)
+            rectangle += ("#" * self.width) + "\n"
+        print(rectangle, end='')
 
     def __str__(self) -> str:
-        """__str__ method"""
+        """
+        __str__ method
+        """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                       self.__x,
-                                                       self.__y,
+                                                       self.__x, self.__y,
                                                        self.__width,
-                                                       self.__heigth)
+                                                       self.__height)
