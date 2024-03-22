@@ -18,6 +18,7 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     results = cur.fetchall()
+
     for element in results:
         print(element)
 
