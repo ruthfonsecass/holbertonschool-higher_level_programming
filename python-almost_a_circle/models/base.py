@@ -14,18 +14,19 @@ class Base:
         """
             This is a constructor function that assigns an ID to
             an object either
-            based on a given ID or by incrementing a counter.
-
-            Args:
-                id (int): The "id" parameter is an optional argument that can
-                be passed to the constructor of an object. If a value is
-                provided
-                for "id", it will be assigned to the object's "id" attribute.
-                If no value is provided for "id", a new value will be generated
-                and assigned to.
+            based on a given ID or by incrementing a counter
         """
         if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Static method that returns the JSON string representation of
+        list_dictionaries
+        """
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
