@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     query = "SELECT * FROM states WHERE name LIKE '%N' ORDER BY id ASC"
 
-    cur.execute(query, (staty_name,))
+    cur.execute(query, (state_name,))
 
     results = cur.fetchall()
 
