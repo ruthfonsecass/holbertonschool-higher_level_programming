@@ -4,15 +4,16 @@
 This module defines the `BaseGeometry` class and the `Rectangle` class.
 """
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Rectangle(BaseGeometry):
-    """Initializes a new Rectangle instance."""
+class Square(Rectangle):
+    """Initializes a new Square instance."""
 
-    def __init__(self, width, height):
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
+    def __init__(self, size):
+        self.integer_validator("size", size)
+        super().__init__(size, size)
+        self.__size = size
 
-        self.__width = width
-        self.__height = height
+    def area(self):
+        return (self.__size * self.__size)
