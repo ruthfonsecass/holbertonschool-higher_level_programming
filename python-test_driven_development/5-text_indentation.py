@@ -2,8 +2,8 @@
 def text_indentation(text):
     """ Function that prints 2 new lines after ".?:" characters
     """
-    if not isinstance(text, str):
-        raise TypeError ("text must be a string")
+    if type(text) is not str:
+        raise TypeError("text must be a string")
     for i in range(len(text)):
         if text[i - 1] in ".?:" and i > 0 and text[i] is " ":
             continue
