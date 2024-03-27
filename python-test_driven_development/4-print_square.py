@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define Python interpreter path."""
 
+
 def print_square(size):
     """Print a perfect square given a valid int or float argument.
     """
