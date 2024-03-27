@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define Python interpreter path."""
 
+
 def say_my_name(first_name, last_name=""):
     """Print My name is (first) (last) if given, else print error.
     """
