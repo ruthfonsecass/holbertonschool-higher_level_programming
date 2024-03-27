@@ -4,15 +4,13 @@ Module composed by a function that prints 2 new lines after ".?:" characters
 """
 
 
-def text_indentation(text):
-    """ Function that prints 2 new lines after ".?:" characters
-    """
+def max_integer(list=[]):
+    """Function to find and return the max integer in a list of integers."""
 
-    if type(text) is not str:
-        raise TypeError("text must be a string")
-    for i in range(len(text)):
-        if text[i - 1] in ".?:" and i > 0 and text[i] is " ":
-            continue
-        print(text[i], end="")
-        if text[i] is "." or text[i] is "?" or text[i] is ":":
-            print("\n")
+    if len(list) == 0:
+        return None
+    max_int = list[0]
+    for num in list:
+        if num > max_int:
+            max_int = num
+    return max_int
